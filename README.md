@@ -20,6 +20,6 @@ This is a pretty standard [create-react-app](https://github.com/facebook/create-
 This project is hosted on Heroku! Deployment begins when pushing to our remote Heroku git repository. So long as you've followed the Heroku Buildpack instructions above, it should be as simple as: 
 ```
 $ git add .
-$ git commit -m "made player larger than life"
+$ git commit -m "makes player larger than life"
 $ git push heroku master
 ```
