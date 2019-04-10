@@ -5,8 +5,23 @@
   max-width: 1080px;
 }
 
+.App-controls {
+  grid-column: 1 / span 5;
+}
+
+.media {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
 .full {
   grid-column: span 12;
+}
+
+.center {
+  text-align: center;
 }
 
 .tracklist {
@@ -16,19 +31,22 @@
   grid-column: 1 / span 5;
 }
 
-.tracklist li {
-  background-color: gainsboro;
+.track {
   padding: 0.5rem;
 }
-.tracklist li:nth-of-type(even) {
+.track:nth-of-type(even) {
   background-color: whitesmoke;
 }
 
-.track {
+.title {
   color: slategray;
 }
-.track:visited {
+.title:visited {
   color: slategray;
+}
+
+.track.active {
+  background-color: gainsboro;
 }
 
 .player {
@@ -36,6 +54,10 @@
   height: 320px;
   width: auto;
   display: inline-block;
+}
+
+video:focus {
+  outline: none;
 }
 
 .video {
