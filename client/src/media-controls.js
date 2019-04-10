@@ -10,10 +10,14 @@ function MediaControls({ playing, setCurrentTrack, tracks }, ref) {
       {playing ? (
         <i
           className="fa fa-pause"
-          onClick={() => ref.current.pause()} />
+          onClick={() => {
+            ref.current.pause();
+          }} />
       ) : (
         <i
-          className="fa fa-play" onClick={() => ref.current.play()}/>
+          className="fa fa-play" onClick={() => {
+            ref.current.play();
+          }}/>
         )}
       <i
         className="fa fa-forward"

@@ -38,6 +38,10 @@
   background-color: whitesmoke;
 }
 
+.fa {
+  cursor: pointer;
+}
+
 .title {
   color: slategray;
   text-decoration: underline;
