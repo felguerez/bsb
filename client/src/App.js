@@ -24,12 +24,16 @@ function App (props) {
     <div className="App">
       <p className="full center">If you enjoy these hits please follow BSB on <a
         href="https://www.facebook.com/backstreetboys/"
-        target="_blank">
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Facebook
       </a>.
         <a
           href="https://open.spotify.com/album/02FX4aLHDNacfV4bMnO9Kv"
-          target="_blank">
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           New album - DNA - out now!
         </a>
       </p>

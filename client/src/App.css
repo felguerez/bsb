@@ -40,9 +40,16 @@
 
 .title {
   color: slategray;
+  text-decoration: underline;
+  cursor: pointer;
 }
+
 .title:visited {
   color: slategray;
+}
+
+.title:hover {
+  color: #666666;
 }
 
 .track.active {

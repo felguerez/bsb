@@ -9,13 +9,13 @@ function Playlist({ tracks, setCurrentTrack, currentTrackIndex }) {
         key={`${track.title}-${i}`}
         className={`track${currentTrackIndex === i ? ' active' : ''}`}
       >
-        <a
+        <span
           href='#'
           onClick={() => setCurrentTrack(i)}
           className="title"
         >
           {track.title}
-        </a>
+        </span>
       </li>
       ))}
     </ul>
