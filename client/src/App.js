@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import Player from "./player";
 
 import './App.css';
+import {Playlist} from "./playlist";
 
 function App (props) {
   const [tracks, setTracks] = useState([]);
@@ -19,17 +20,7 @@ function App (props) {
     <div className="App">
       <h3 className="full">Greatest Hits : ^)</h3>
       <ul className="tracklist">
-        {tracks.map((track, i) => (
-          <li key={`${track.title}-${i}`}>
-            <a
-              href='#'
-              onClick={() => setCurrentTrack(track)}
-              className="track"
-            >
-              {track.title}
-            </a>
-          </li>
-        ))}
+        <Playlist tracks={tracks} setCurrentTrack={setCurrentTrack} />
       </ul>
       <Player track={currentTrack} />
     </div>
