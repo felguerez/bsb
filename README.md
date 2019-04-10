@@ -23,3 +23,10 @@ $ git add .
 $ git commit -m "makes player larger than life"
 $ git push heroku master
 ```
+
+## Next Steps
+This is just the beginning. There are a few things I would do if I had more time:
+
+* **Add better build tools (asset compilation)** - I'm used to SCSS/SASS running as part of frontend asset compilation, so I felt a bit slowed down writing conventional CSS.
+* **Add a state manager (Redux)** - I used this as an opportunity to try out [Hooks](https://overreacted.io/a-complete-guide-to-useeffect/) in a small application. I like this new paradigm however I can see where I could implement `actions` to get the same behavior but with fewer lines of code (I think).
+* **Routing** - a frontend router like React Router would give us easy access browser history. This would allow a user to navigate through their browser history on the site with their native back/forward browser buttons. Each track could be accessible via its own route, making it easy to share your fave tunes with your friends.
