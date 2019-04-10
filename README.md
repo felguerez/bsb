@@ -13,6 +13,7 @@ You should see a development build in your browser at http://localhost:3000.
 
 ### Directory Structure
 This is a pretty standard [create-react-app](https://github.com/facebook/create-react-app) housed in the `client` directory. An additional Express server, `index.js`, sits at the directory root. This Express server fetches media data and makes it available to the client.
+New components should be added to the `client/src` directory.
 
 ## Deployment
 **Note** Heroku Buildpack is a prerequisite to deploy. [Learn how to deploy with Git on Heroku](https://devcenter.heroku.com/articles/git).
