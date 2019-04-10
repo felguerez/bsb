@@ -34,7 +34,12 @@ function App (props) {
         </a>
       </p>
       <div className="App-controls">
-        <MediaControls playing={playing} ref={ref}  />
+        <MediaControls
+          playing={playing}
+          ref={ref}
+          setCurrentTrack={setCurrentTrack}
+          tracks={tracks}
+        />
         <Playlist
           tracks={tracks}
           setCurrentTrack={setCurrentTrack}
@@ -47,7 +52,7 @@ function App (props) {
         togglePlaying={() => togglePlaying(playing => !playing)}
         onEnded={() => {
           setTracks(tracks => tracks.filter(t => (t.title !== tracks[currentTrackIndex].title)));
-          setCurrentTrack(track => track >= tracks.length - 1 ? 0 : track++);
+          setCurrentTrack(track => track >= tracks.length - 1 ? 0 : track + 1);
         }}
       />
     </div>
