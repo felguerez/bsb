@@ -9,6 +9,11 @@ $ yarn install
 $ yarn start
 ```
 
+In a separate process:
+```
+$ yarn client
+```
+
 You should see a development build in your browser at http://localhost:3000.
 
 ### Directory Structure
