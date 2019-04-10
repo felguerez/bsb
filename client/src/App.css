@@ -1,0 +1,43 @@
+.App {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  max-width: 1080px;
+}
+
+.full {
+  grid-column: span 12;
+}
+
+.tracklist {
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+  grid-column: 1 / span 5;
+}
+
+.tracklist li {
+  background-color: gainsboro;
+  padding: 0.5rem;
+}
+.tracklist li:nth-of-type(even) {
+  background-color: whitesmoke;
+}
+
+.track {
+  color: slategray;
+}
+.track:visited {
+  color: slategray;
+}
+
+.player {
+  grid-column: 7 / span 6;
+  height: 320px;
+  width: auto;
+  display: inline-block;
+}
+
+.video {
+  width: 100%;
+}
