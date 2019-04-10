@@ -6,7 +6,7 @@ export function Playlist({tracks, setCurrentTrack}) {
     <li key={`${track.title}-${i}`}>
       <a
         href='#'
-        onClick={() => setCurrentTrack(track)}
+        onClick={() => setCurrentTrack(i)}
         className="track"
       >
         {track.title}
