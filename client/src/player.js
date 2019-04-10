@@ -10,8 +10,8 @@ const Player = forwardRef(({ track, onEnded, togglePlaying }, ref) => {
         className={track.title ? "video active" : "video"}
         controls src={track.mediaUrl}
         onEnded={onEnded}
-        onPause={togglePlaying}
-        onPlay={togglePlaying}
+        onPause={() => togglePlaying(false)}
+        onPlaying={() => togglePlaying(true)}
         autoPlay
       />
     </div>

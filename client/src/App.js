@@ -53,7 +53,7 @@ function App (props) {
       <Player
         ref={ref}
         track={tracks[currentTrackIndex]}
-        togglePlaying={() => togglePlaying(playing => !playing)}
+        togglePlaying={togglePlaying}
         onEnded={() => {
           setTracks(tracks => tracks.filter(t => (t.title !== tracks[currentTrackIndex].title)));
           setCurrentTrack(track => track >= tracks.length - 1 ? 0 : track + 1);
